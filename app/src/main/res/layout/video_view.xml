@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black">
+
+    //video view
+
+    <VideoView
+        android:id="@+id/vv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    //panel and subtitle
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Transparent">
+
+        //top panel
+
+        <FrameLayout
+            android:id="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_size"
+            android:layout_alignParentTop="true"
+            android:background="@color/Transparent_Black"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+        </FrameLayout>
+
+
+        //top subtitle
+
+
+
+        <widgets.SubtitleView
+            android:id="@+id/top_subtitle"
+            android:minHeight="60dp"
+            android:layout_below="@id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:subtitle_position="top"/>
+
+
+        //media controller panel
+
+        <widgets.MediaController
+            android:id="@+id/controllerPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        //bottom subtitle
+
+        <widgets.SubtitleView
+            android:id="@+id/bottom_subtitle"
+            android:minHeight="60dp"
+            android:layout_above="@id/controllerPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:subtitle_position="bottom"/>
+
+
+    </RelativeLayout>
+
+</merge>

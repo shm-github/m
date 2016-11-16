@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_weight="9"
+        android:id="@+id/tv_Sub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/Transparent_Gray"
+        android:gravity="center"
+        android:minHeight="@dimen/actionbar_size"
+        android:text="برای باز کردن زیرنویس اینجا را لمس کنید"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/close"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:src="@drawable/ic_clear_black_24dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</merge>

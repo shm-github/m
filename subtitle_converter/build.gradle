@@ -1,0 +1,10 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/commons-lang3-3.5.jar')
+    compile files('libs/commons-cli-1.x-cytoscape-custom.jar')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

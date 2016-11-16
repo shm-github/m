@@ -1,0 +1,2 @@
+include ':app', ':subtitle_converter', ':k4l-video-trimmer'
+include ':aFileChooser'
